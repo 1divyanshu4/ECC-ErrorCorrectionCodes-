@@ -74,18 +74,14 @@ This folder contains the main implementations of ECC algorithms. It is further d
 
 ### 1. Clone the Repository  
 git clone <repository-url>  
-cd ECC-ErrorCorrectionCodes
+cd ECC-ErrorCorrectionCodes 
 
-### 2. Navigate to the Desired Folder  
-- For components: Navigate to the `Components` folder.  
-- For specific ECC implementations, navigate to the respective subfolder under `Source`.  
-
-### 3. Compile and Simulate  
+### 2. Compile and Simulate  
 - Open Quartus Prime Lite and create a new project.  
 - Add the necessary VHDL files from the repository.  
 - Compile the design and simulate its functionality using ModelSim-Altera.  
 
-### 4. Run on Hardware  
+### 3. Run on Hardware  
 - Synthesize the design to generate a `.sof` (SRAM Object File).  
 - Use Quartus Programmer to upload the synthesized design onto the DE10-Lite FPGA board.  
 - Test and verify the functionality on hardware using input switches and output LEDs.  
@@ -95,7 +91,6 @@ cd ECC-ErrorCorrectionCodes
 ## Testing and Verification  
 - **Simulation**:  
   - Each implementation has been simulated and verified using ModelSim-Altera.  
-  - Testbenches are provided in the subfolders under `Source` to validate encoder and decoder functionality for Hamming Code and Hadamard Code.  
 
 - **Hardware Testing**:  
   - Load the design onto the DE10-Lite board.  
